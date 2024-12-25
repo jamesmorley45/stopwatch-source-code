@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stop Watch Application | DevFai</title>
+    <style>
+        /* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url("../img/image2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+.text-boxes{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.text-boxes .text-box{
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+.text-boxes .text-box .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: #d6dbe7;
+  margin: 4px;
+}
+.text-boxes .text-box textarea{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #265df2;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+.text-boxes .text-box button{
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #265df2;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.text-boxes .text-box button:hover{
+  background: #0e4bf1;
+}
+@media (max-width: 400px) {
+  .text-boxes .text-box button{
+    width: 100%;
+  }
+}
+h1{
+    font-size: 30px;
+    color: white;
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Stop Watch Applic...</h1>
+    <div class="text-boxes">
+      <div class="text-box HTMLBox">
+        <div class="topic">HTML Code:</div>
+        <textarea id="HTMLBox" readonly>
+           
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+          <div class="input-box">
+            <p>00:</p><p>00:</p><p>00</p>
+          </div><!-- end input-box-->
+        </div><!-- end content -->
+    </div>
+</body>
+</html>
+      </textarea
+        >
+        <button id="HTMLButton">Copy Codes</button>
+      </div>
+      <div class="text-box CSSBox">
+        <div class="topic">CSS Code:</div>
+        <textarea id="CSSBox" readonly>
+            body{
+                background: linear-gradient(25deg,#a3e4ec,#2f7e7e 50%);
+                display: flex;
+                justify-content: center;
+                
+                font-family: sans-serif;
+            }
+            .container{
+                background-color: #eee9e9;
+                border-radius: 16px;
+                padding: 20px;
+                box-shadow: 0 0 12px rgb(0,0,0.1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                margin-top: 130px;
+            
+            }
+             .title{
+                font-size: 30px;
+                margin-bottom:1.5rem;
+             }
+             .stopwatch{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+             }
+              .timer{
+                font-size: 40px;
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 12px rgb(0,0,0.1);
+                animation: pulse 1,5s infinite alternate;  ;
+              }
+            
+              @keyframes pulse{
+                from{
+            transform: scale(1);
+                }
+                to{
+              transform: scale(1.05);
+                }
+              }
+              .timer span{
+                width: 110px;
+                display: inline-block;
+                text-align: center;
+              }
+            
+              .control{
+                display: flex;
+                gap: 1rem;
+              }
+              button{
+                padding: 0.75rem 1.5rem;
+                font-size: 10px;
+                background-color: #910a0a;
+                color: #ffffff;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+              }
+              button:hover{
+                background-color: #080205;
+              }
+              .laptitle{
+                font-size: 1.5rem;
+              }
+            .laptitle{
+            width: 100%;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow-y: auto;
+                max-height: 200px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 0 12px rgb(0,0,0,0.1);
+            }
+            
+            li{
+                padding: 1rem;
+                border-bottom: 1px solid #e0e0e0 ;
+            }
+            li:last-child{
+            border-bottom: none;
+            }
+            li span{
+                font-weight: 700;
+            }
+      </textarea
+        >
+        <button id="CSSButton">Copy Codes</button>
+      </div>
+      <div class="text-box JSBox">
+        <div class="topic">JavaScript Code:</div>
+        <textarea id="JSBox" readonly>
+           
+            const minutesLabel = document.getElementById('minutes');
+const secondsLabel = document.getElementById('seconds');
+const millisecondsLabel = document.getElementById('milliseconds');
+
+const startButton = document.getElementById('startBtn');
+const stopButton = document.getElementById('stopBtn');
+const pauseButton = document.getElementById('pauseBtn');
+const resetButton = document.getElementById('resetBtn');
+
+const lapList = document.getElementById('laplist');
+
+/// stopwatch variables
+
+let minutes = 0;
+let seconds = 0;
+let milliseconds = 0;
+let interval;
+
+startButton.addEventListener('click',startTimer);
+stopButton.addEventListener('click',stopTimer);
+pauseButton.addEventListener('click',pauseTimer);
+resetButton.addEventListener('click',resetTimer);
+
+
+function startTimer(){
+
+    interval =  setInterval(updateTimer,10);
+    startButton.disabled = true;
+
+}
+
+function stopTimer(){
+
+    clearInterval(interval);
+    addToLapList();
+    resetTimerData();
+    startButton.disabled = false;
+}
+
+function pauseTimer(){
+    clearInterval(interval);
+    startButton.disabled = false;
+}
+
+function resetTimer(){
+    clearInterval(interval);
+    resetTimerData();
+    startButton.disabled = false;
+
+}
+
+function updateTimer(){
+    milliseconds++;
+    if(milliseconds === 100){  //// 1000  -> 1 seconds = 1000 millseconds
+        milliseconds = 0;
+        seconds++;
+        if(seconds === 60){
+            seconds = 0;
+            minutes++;
+        }
+    }
+
+    displayTimer();
+}
+
+function displayTimer(){
+    millisecondsLabel.textContent = padTime(milliseconds);
+    secondsLabel.textContent = padTime(seconds);
+    minutesLabel.textContent = padTime(minutes);    
+}
+
+function padTime(time){
+    return time.toString().padStart(2,'0');
+}
+
+function resetTimerData(){
+    minutes = 0;
+    seconds = 0;
+    milliseconds = 0;
+    displayTimer();
+}
+
+function addToLapList(){
+    const lapTime = `${padTime(minutes)}:${padTime(seconds)}:${padTime(milliseconds)}`;
+
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `<span>Lap ${lapList.childElementCount + 1}: </span>${lapTime}`;
+    lapList.appendChild(listItem);
+}
+      </textarea
+        >
+        <button id="JSButton">Copy Codes</button>
+      </div>
+    </div>
+
+    <script>
+      // HTML BOx JS Code
+      let HTMLBox = document.getElementById("HTMLBox");
+      let HTMLButton = document.getElementById("HTMLButton");
+
+      HTMLButton.onclick = function () {
+        HTMLBox.select();
+        document.execCommand("copy");
+        HTMLButton.innerText = "Codes Copied";
+      };
+
+      // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function () {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Codes Copied";
+      };
+      // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function () {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Codes Copied";
+      };
+    </script>
+  </body>
+</html>
